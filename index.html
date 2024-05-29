@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fluid Mechanics and Entropy Visualization</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Fluid Mechanics and Entropy Visualizatio</h1>
+    <div id="fluidControls" class="canvas-container">
+        <canvas id="fluidCanvas" width="800" height="800"></canvas>
+        <div class="controls">
+            <button id="fluidStartButton">Start</button>
+            <button id="entropyButton">Release Particles</button>
+            <button id="toggleSizeButton">Toggle Point Size</button>
+            <button id="connectRedButton" class="hidden">Connect Red Points</button>
+            <button id="connectGreenButton" class="hidden">Connect Green Points</button>
+            <label for="densitySlider">Density:</label>
+            <input type="range" id="densitySlider" min="200" max="4000" step="100" value="1000">
+            <small>Adjust the number of particles from 200 to 4000</small>
+            <label for="speedSlider">Speed:</label>
+            <input type="range" id="speedSlider" min="1" max="10" step="1" value="2">
+            <small>Adjust the speed of the particles</small>
+            <label for="timeSlider">Time Multiplier:</label>
+            <input type="range" id="timeSlider" min="1" max="10" step="1" value="1">
+            <small>Adjust the simulation time multiplier</small>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
